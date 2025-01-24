@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - Categories Management</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #FFFFFF;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #2C7BE5;
+        }
+        .actions {
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        .actions button {
+            background-color: #2C7BE5;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #F8F9FA;
+        }
+        table th {
+            background-color: #F4F7FC;
+        }
+        table tr:nth-child(even) {
+            background-color: #F8F9FA;
+        }
+        .edit, .delete {
+            cursor: pointer;
+            color: #2C7BE5;
+            margin-right: 10px;
+        }
+        .delete {
+            color: #EA5455;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Categories Management</h1>
+        </div>
+        <div class="actions">
+            <button>Add Category</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Food</td>
+                    <td>
+                        <span class="edit">Edit</span>
+                        <span class="delete">Delete</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rent</td>
+                    <td>
+                        <span class="edit">Edit</span>
+                        <span class="delete">Delete</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Utilities</td>
+                    <td>
+                        <span class="edit">Edit</span>
+                        <span class="delete">Delete</span>
+                    </td>
+                </tr>
+                <!-- ...existing code... -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

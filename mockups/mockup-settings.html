@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - Settings</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #FFFFFF;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #2C7BE5;
+            padding: 10px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .navbar a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #2C7BE5;
+        }
+        .section, .profile, .notifications {
+            background-color: #F4F7FC;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .section h2, .profile h2, .notifications h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .section label, .profile label, .notifications label {
+            display: block;
+            margin-bottom: 5px;
+            color: #6C757D;
+        }
+        .section input, .section select, .profile input, .notifications input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #6C757D;
+            border-radius: 8px;
+        }
+        .actions {
+            text-align: right;
+        }
+        .actions button {
+            background-color: #2C7BE5;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #2C7BE5;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/expenses">Expenses</a>
+        <a href="/income">Income</a>
+        <a href="/categories">Categories</a>
+        <a href="/reports">Reports</a>
+        <a href="/settings">Settings</a>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Settings</h1>
+        </div>
+        <div class="section">
+            <h2>Profile Settings</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <div class="section">
+            <h2>Default Currency</h2>
+            <label for="currency">Currency</label>
+            <select id="currency">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+                <!-- ...existing code... -->
+            </select>
+        </div>
+        <div class="section">
+            <h2>Notification Preferences</h2>
+            <label for="notifications">Notifications</label>
+            <select id="notifications">
+                <option value="all">All Notifications</option>
+                <option value="email">Email Only</option>
+                <option value="none">None</option>
+                <!-- ...existing code... -->
+            </select>
+        </div>
+        <div class="section">
+            <h2>Budget Limits</h2>
+            <label for="budget">Budget Limit</label>
+            <input type="number" id="budget" placeholder="Enter your budget limit">
+        </div>
+        <div class="profile">
+            <h2>User Profile</h2>
+            <label for="profile-name">Name</label>
+            <input type="text" id="profile-name" placeholder="John Doe">
+            <label for="profile-email">Email</label>
+            <input type="email" id="profile-email" placeholder="john.doe@example.com">
+        </div>
+        <div class="notifications">
+            <h2>Notifications</h2>
+            <label for="notification-message">Message</label>
+            <input type="text" id="notification-message" placeholder="You have a new message">
+            <label for="notification-report">Report</label>
+            <input type="text" id="notification-report" placeholder="Your report is ready">
+        </div>
+        <div class="actions">
+            <button>Save Settings</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Expense Tracker. All rights reserved.</p>
+    </div>
+</body>
+</html>

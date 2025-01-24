@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - Authentication</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #FFFFFF;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: #2C7BE5;
+            padding: 10px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .navbar a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #F4F7FC;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #2C7BE5;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #6C757D;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #6C757D;
+            border-radius: 8px;
+        }
+        .actions {
+            text-align: center;
+        }
+        .actions button {
+            background-color: #2C7BE5;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .actions a {
+            color: #2C7BE5;
+            text-decoration: none;
+        }
+        .profile, .notifications {
+            background-color: #F4F7FC;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .profile h2, .notifications h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .profile label, .notifications label {
+            display: block;
+            margin-bottom: 5px;
+            color: #6C757D;
+        }
+        .profile input, .notifications input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #6C757D;
+            border-radius: 8px;
+        }
+        .footer {
+            background-color: #2C7BE5;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/expenses">Expenses</a>
+        <a href="/income">Income</a>
+        <a href="/categories">Categories</a>
+        <a href="/reports">Reports</a>
+        <a href="/settings">Settings</a>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Login</h1>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="actions">
+                <button type="submit">Login</button>
+                <p><a href="#">Forgot Password?</a></p>
+                <p><a href="#register">Don't have an account? Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="container" id="register">
+        <div class="header">
+            <h1>Register</h1>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password">
+            </div>
+            <div class="actions">
+                <button type="submit">Register</button>
+                <p><a href="#">Already have an account? Login</a></p>
+            </div>
+        </form>
+    </div>
+    <div class="profile">
+        <h2>User Profile</h2>
+        <label for="profile-name">Name</label>
+        <input type="text" id="profile-name" placeholder="John Doe">
+        <label for="profile-email">Email</label>
+        <input type="email" id="profile-email" placeholder="john.doe@example.com">
+    </div>
+    <div class="notifications">
+        <h2>Notifications</h2>
+        <label for="notification-message">Message</label>
+        <input type="text" id="notification-message" placeholder="You have a new message">
+        <label for="notification-report">Report</label>
+        <input type="text" id="notification-report" placeholder="Your report is ready">
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Expense Tracker. All rights reserved.</p>
+    </div>
+</body>
+</html>

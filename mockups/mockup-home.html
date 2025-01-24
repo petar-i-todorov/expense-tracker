@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - Dashboard</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #FFFFFF;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #2C7BE5;
+            padding: 10px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .navbar a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #2C7BE5;
+        }
+        .stats, .recent-activity, .charts, .profile, .notifications {
+            background-color: #F4F7FC;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .stats h2, .recent-activity h2, .charts h2, .profile h2, .notifications h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .stats .stat-item, .recent-activity .activity-item, .profile .profile-item, .notifications .notification-item {
+            margin-bottom: 10px;
+        }
+        .stat-item span, .activity-item span, .profile-item span, .notification-item span {
+            display: block;
+            font-size: 16px;
+        }
+        .stat-item .value, .profile-item .value, .notification-item .value {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .stat-item .label, .activity-item .description, .profile-item .label, .notification-item .description {
+            color: #6C757D;
+        }
+        .chart {
+            background-color: #F4F7FC;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .chart h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .chart-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #E9ECEF;
+            border-radius: 8px;
+        }
+        .footer {
+            background-color: #2C7BE5;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/expenses">Expenses</a>
+        <a href="/income">Income</a>
+        <a href="/categories">Categories</a>
+        <a href="/reports">Reports</a>
+        <a href="/settings">Settings</a>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="stats">
+            <h2>Quick Stats</h2>
+            <div class="stat-item">
+                <span class="value" style="color: #28C76F;">$5,000</span>
+                <span class="label">Total Income</span>
+            </div>
+            <div class="stat-item">
+                <span class="value" style="color: #EA5455;">$2,500</span>
+                <span class="label">Total Expenses</span>
+            </div>
+            <div class="stat-item">
+                <span class="value" style="color: #2C7BE5;">$2,500</span>
+                <span class="label">Current Balance</span>
+            </div>
+        </div>
+        <div class="charts">
+            <h2>Monthly Expense Trends</h2>
+            <div class="chart-placeholder"></div>
+        </div>
+        <div class="recent-activity">
+            <h2>Recent Activity</h2>
+            <div class="activity-item">
+                <span class="description">Bought groceries</span>
+                <span class="value" style="color: #EA5455;">-$50</span>
+            </div>
+            <div class="activity-item">
+                <span class="description">Salary</span>
+                <span class="value" style="color: #28C76F;">+$3,000</span>
+            </div>
+            <div class="activity-item">
+                <span class="description">Paid rent</span>
+                <span class="value" style="color: #EA5455;">-$1,200</span>
+            </div>
+        </div>
+        <div class="profile">
+            <h2>User Profile</h2>
+            <div class="profile-item">
+                <span class="value">John Doe</span>
+                <span class="label">Name</span>
+            </div>
+            <div class="profile-item">
+                <span class="value">john.doe@example.com</span>
+                <span class="label">Email</span>
+            </div>
+        </div>
+        <div class="notifications">
+            <h2>Notifications</h2>
+            <div class="notification-item">
+                <span class="description">You have a new message</span>
+                <span class="value">Message</span>
+            </div>
+            <div class="notification-item">
+                <span class="description">Your report is ready</span>
+                <span class="value">Report</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Expense Tracker. All rights reserved.</p>
+    </div>
+</body>
+</html>
