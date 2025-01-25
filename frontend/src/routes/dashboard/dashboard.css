@@ -1,0 +1,35 @@
+.stat {
+    .stat-value {
+        font-weight: bold;
+    }
+    
+    .stat-value.income {
+        color: var(--success);
+    }
+
+    .stat-value.expenses {
+        color: var(--error);
+    }
+
+    .stat-value.balance {
+        color: var(--info);
+    }
+
+    .stat-type {
+        color: var(--ob-base-subtle);
+    }
+}
+
+.activity {
+    .activity-value {
+        font-size: var(--text-sm)
+    }
+
+    .activity-value.activity-positive {
+        color: var(--success);
+    }
+
+    .activity-value.activity-negative {
+        color: var(--error);
+    }
+}

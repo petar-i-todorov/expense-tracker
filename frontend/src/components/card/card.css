@@ -1,0 +1,16 @@
+.card {
+    padding: 20px 10px;
+    align-self: stretch;
+    background-color: var(--base);
+    color: var(--on-base);
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
